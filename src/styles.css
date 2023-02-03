@@ -1,0 +1,99 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#121212, #212b46);
+}
+
+.title{
+    color: #f1f1f1;
+    font-size: 80px;
+    font-weight: bold;
+    animation: rotacionarTitle 3s;
+}
+/*efeito que faz o título rotacionar qando inicializa a pag*/
+@keyframes rotacionarTitle {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+    
+}
+
+.containerInput{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 35px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input{
+    background-color: transparent;
+    outline: none;
+    padding-left: 3px;
+    border: 0;
+    font-size: 20px;
+    color:#fff;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: #f1f1f1;
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+    transform: scale(1.5);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;background: #f1f1f1;
+    border-radius: 8px;
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 40px;
+}
+
+.main span{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@media (max-width: 680px){
+    .title{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .main h2{
+        font-size: 28px;
+    }
+
+    .main{
+        width: 80%;
+        min-height: 250px;
+    }
+        
+}
